@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}"
+    
+</head>
+<body>
+    <h1>Please Submit the Form</h1>
+    <form method="post">
+        <p>
+            Name:
+            <br>
+            <input type="text" name="nm" required>
+        </p>
+        <p>
+            Email:
+            <br>
+            <input type="email" name="mail" required>
+        </p>
+        <p>
+            Phone:
+            <br>
+            <input type="number" name="num" required>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>
